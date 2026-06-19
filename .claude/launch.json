@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "masa-tzfoni",
+      "runtimeExecutable": "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\node-v24.16.0-win-x64\\node.exe",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "--port", "5173"],
+      "port": 5173
+    },
+    {
+      "name": "masa-prod",
+      "runtimeExecutable": "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\node-v24.16.0-win-x64\\node.exe",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "preview", "--port", "4173"],
+      "port": 4173
+    }
+  ]
+}

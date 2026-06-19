@@ -1,0 +1,86 @@
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* PWA standalone: keep scrollable content clear of the home indicator / side notches */
+@media (display-mode: standalone) {
+  main {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Heebo', 'Assistant', system-ui, sans-serif;
+  background: #f7f9f6;
+  color: #1c3a23;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* כותרות בפונט דיספליי */
+h1,
+h2,
+h3,
+.font-display {
+  font-family: 'Assistant', 'Heebo', system-ui, sans-serif;
+}
+
+/* גלילה עדינה */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bbdfbe;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8fc795;
+}
+
+/* Leaflet בתוך RTL — שמירה על קונטרולים תקינים */
+.leaflet-container {
+  direction: ltr;
+  font-family: inherit;
+}
+.leaflet-popup-content {
+  direction: rtl;
+  text-align: right;
+  margin: 12px 14px;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 14px;
+}
+
+/* אנימציית כניסה לכרטיסים */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeUp {
+  animation: fadeUp 0.35s ease both;
+}
+
+/* סמן מסלול מותאם */
+.route-pin {
+  background: transparent;
+  border: none;
+}
