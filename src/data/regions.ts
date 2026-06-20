@@ -106,6 +106,14 @@ export const regions: Region[] = [
     interests: ['water', 'scenic', 'culture'],
   },
   {
+    id: 'boston',
+    name: 'בוסטון ומסצ׳וסטס',
+    nameEn: 'Boston & Massachusetts',
+    blurb:
+      'עיר המהפכה האמריקאית, אוניברסיטאות ברמה עולמית ושדרת החירות ההיסטורית. אוכל ים מעולה, ספורט אגדי וחיי תרבות עשירים על חוף ניו-אינגלנד.',
+    interests: ['culture', 'scenic'],
+  },
+  {
     id: 'berkshires',
     name: 'הרי הברקשייר',
     nameEn: 'The Berkshires',
